@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before after</title>
+    <style>
+        img{
+            display: block;
+            margin: 200px auto;
+            position: relative;
+            z-index: 1;
+        }
+        .div1::before{
+            content: '';
+            display: block;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            height: 350px;
+            width: 350px;
+            left: 510px;
+            bottom: 180px;
+        }
+        .div1::after{
+            content: '';
+            display: block;
+            background-color: orangered;
+            border-radius: 50%;
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            left: 560px;
+            bottom: 230px;
+        }
+        /* 
+        .div1::after{
+            content: '';
+            display: block;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            left: 560px;
+            bottom: 230px;
+            z-index: inherit;
+        }
+        .div1::after{
+            content: '';
+            display: block;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            height: 450px;
+            width: 450px;
+            left: 560px;
+            bottom: 230px;
+            z-index: -1;
+        }
+        .div1::after{
+            content: '';
+            display: block;
+            background-color: gray;
+            border-radius: 50%;
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            left: 560px;
+            bottom: 230px;
+            z-index: -2;
+        } */
+
+
+
+
+
+
+        h1::before{
+            content: 'hello world';
+        }
+        h1::after{
+            content: 'werhjkjhgfdssdfty';
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhl7rPl9hWOnIjRj3Dp18wIskm_ME5PBZzQ&usqp=CAU" alt="">
+
+
+
+        <!-- <h1>heading 123456</h1> -->
+    </div>
+</body>
+</html>
